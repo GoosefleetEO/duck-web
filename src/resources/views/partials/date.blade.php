@@ -1,1 +1,1 @@
-<span data-toggle="tooltip" title="{{ $datetime }}">{{ human_diff($datetime) }}</span>
+<span data-toggle="tooltip" title="{{ $datetime }}">{{ $datetime }}</span>
