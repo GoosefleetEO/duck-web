@@ -41,6 +41,9 @@ abstract class AbstractWalletJournalDataTable extends DataTable
     {
         return datatables()
             ->eloquent($this->applyScopes($this->query()))
+            /*->editColumn('division', function ($row) {
+                return number($row->division);
+            })*/
             ->editColumn('date', function ($row) {
                 return view('web::partials.date', ['datetime' => $row->date])->render();
             })
@@ -116,6 +119,7 @@ abstract class AbstractWalletJournalDataTable extends DataTable
     public function getColumns()
     {
         return [
+            /*['data' => 'division', 'title' => 'Division'],*/
             ['data' => 'date', 'title' => trans('web::wallet.date')],
             ['data' => 'ref_type', 'title' => trans('web::wallet.ref_type')],
             ['data' => 'first_party.name', 'title' => trans('web::wallet.from_party')],
