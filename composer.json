@@ -1,11 +1,11 @@
 {
-  "name": "eveseat/web",
-  "description": "SeAT Web Interface",
+  "name": "goosefleetEO/duck-web",
+  "description": "DUCK Web Interface",
   "license": "GPL-2.0",
   "authors": [
     {
-      "name": "Leon Jacobs",
-      "email": "leonja511@gmail.com"
+      "name": "Goosefleet IT",
+      "email": "hello@goosegoo.se"
     }
   ],
   "autoload": {
