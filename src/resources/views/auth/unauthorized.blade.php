@@ -5,7 +5,7 @@
 @section('content')
 
   <div class="login-logo">
-    <a href="#">S<b>e</b>AT</a>
+    <a href="#">DUCK</a>
   </div>
 
   <div class="card">

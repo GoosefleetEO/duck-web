@@ -7,7 +7,7 @@
     <!-- favicos -->
     @include('web::includes.favico')
 
-    <title>SeAT | @yield('title', 'Eve Online API Tool')</title>
+    <title>DUCK | @yield('title', 'Eve Online API Tool')</title>
 
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,6 +20,10 @@
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <style>
+	p { text-align: center !important; }
+    </style>
 
     <!-- Custom layout CSS -->
     @if(file_exists(public_path('custom-layout-mini.css')))

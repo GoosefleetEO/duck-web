@@ -5,7 +5,8 @@
 @section('content')
 
   <div class="login-logo">
-    S<b>e</b>AT | {{ trans('web::seat.sign_in') }}
+<b>Direct Unified<br>Command & Kontrol</b><br>
+<!-- {{ trans('web::seat.sign_in') }} -->
   </div>
 
   <hr>
