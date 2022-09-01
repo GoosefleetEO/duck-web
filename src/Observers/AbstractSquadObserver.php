@@ -60,7 +60,7 @@ abstract class AbstractSquadObserver
             $query->where('id', $user->id);
         })->get();
 
-        // remove the user from "auto" type squads to which they have lost eligibility.
+        // remove the user from squads to which they have lost eligibility.
         $member_squads->each(function ($squad) use ($user) {
             if (! $squad->isEligible($user))
                 $squad->members()->detach($user->id);
