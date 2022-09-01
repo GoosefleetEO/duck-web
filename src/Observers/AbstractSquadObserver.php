@@ -55,18 +55,18 @@ abstract class AbstractSquadObserver
 
         $member_squads = $user->squads;
 
-        // retrieve all auto squads from which the user is not already a member.
+        // retrieve a listing of "auto" type squads of which the user is not already a member.
         $other_squads = Squad::where('type', 'auto')->whereDoesntHave('members', function ($query) use ($user) {
             $query->where('id', $user->id);
         })->get();
 
-        // remove the user from squads to which he's non longer eligible.
+        // remove the user from "auto" type squads to which they have lost eligibility.
         $member_squads->each(function ($squad) use ($user) {
             if (! $squad->isEligible($user))
                 $squad->members()->detach($user->id);
         });
 
-        // add the user to squads from which he's not already a member.
+        // add the user to "auto" type squads to which they have gained eligibility.
         $other_squads->each(function ($squad) use ($user) {
             if ($squad->isEligible($user))
                 $squad->members()->save($user);
