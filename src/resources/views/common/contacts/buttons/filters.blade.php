@@ -1,6 +1,6 @@
 <div class="mb-3">
   <div class="btn-group d-flex">
-    <button data-filter-field="standing" data-filter-value="-10" class="btn btn-danger dt-filters active">
+    <!-- <button data-filter-field="standing" data-filter-value="-10" class="btn btn-danger dt-filters active">
       <i class="fas fa-minus"></i>
     </button>
     <button data-filter-field="standing" data-filter-value="-5" class="btn btn-warning dt-filters active">
@@ -14,7 +14,7 @@
     </button>
     <button data-filter-field="standing" data-filter-value="10" class="btn btn-primary dt-filters active">
       <i class="fas fa-plus"></i>
-    </button>
+    </button> -->
   </div>
 </div>
 <div class="mb-3">
