@@ -1,5 +1,7 @@
 <div class="mb-3">
   <div class="btn-group d-flex">
+    <!-- TODO: figure out how to remove these completely useless filters and add ranged filters. -->
+    
     <!-- <button data-filter-field="standing" data-filter-value="-10" class="btn btn-danger dt-filters active">
       <i class="fas fa-minus"></i>
     </button>
