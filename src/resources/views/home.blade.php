@@ -2,7 +2,6 @@
 
 @section('title', trans('web::seat.home'))
 @section('page_header', trans('web::seat.home'))
-@section('page_description', trans('web::seat.dashboard'))
 
 @section('full')
 
