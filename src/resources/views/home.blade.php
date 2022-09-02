@@ -35,7 +35,7 @@
           </span>
           <span class="info-box-text">
             <a href="{{ route('auth.eve') }}" class="text-muted">
-              Link Additional Character
+              <small>Link Additional Character</small>
             </a>
           </span>
         </div><!-- /.info-box-content -->
