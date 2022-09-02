@@ -34,7 +34,7 @@
         </select>
       </div>
 
-      @include('web::common.contacts.buttons.filters')
+      @include('web::character.contacts.buttons.filters')
 
       {!! $dataTable->table() !!}
     </div>
