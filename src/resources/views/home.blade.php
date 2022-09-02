@@ -28,7 +28,11 @@
       <div class="info-box">
         <span class="info-box-icon bg-green elevation-1"><i class="fa fa-key"></i></span>
         <div class="info-box-content">
-          <span class="info-box-text">{{ trans('web::seat.linked_characters') }}</span>
+          <span class="info-box-text">{{ trans('web::seat.linked_characters') }}
+          <a href="{{ route('auth.eve') }}" class="dropdown-item">
+            <i class="fas fa-link"></i> ({{ trans('web::seat.link_character') }})
+          </a>
+          </span>
           <span class="info-box-number">
             {{ count(auth()->user()->associatedCharacterIds()) }}
           </span>
