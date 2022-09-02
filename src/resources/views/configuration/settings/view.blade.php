@@ -100,15 +100,6 @@
             </div>
           </div>
 
-          <!-- Text input-->
-          <div class="form-group row">
-            <label class="col-md-4 col-form-label" for="tracking_id">{{ trans('web::seat.tracking_id') }}</label>
-            <div class="col-md-6">
-              <input id="tracking_id" name="tracking_id" type="text"
-                     class="form-control input-md" value="{{ setting('analytics_id', true) }}" disabled>
-            </div>
-          </div>
-
         </div>
         <!-- /.box-body -->
 
