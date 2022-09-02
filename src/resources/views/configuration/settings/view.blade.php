@@ -100,29 +100,6 @@
             </div>
           </div>
 
-          <legend>{{ trans('web::seat.google_analytics') }}</legend>
-
-          <!-- Select Basic -->
-          <div class="form-group row">
-            <label class="col-md-4 col-form-label" for="allow_tracking">{{ trans('web::seat.allow_tracking') }}</label>
-            <div class="col-md-6">
-              <select id="allow_tracking" name="allow_tracking" class="form-control" style="width: 100%;">
-                <option value="yes"
-                        @if(setting('allow_tracking', true) == "yes") selected @endif>
-                  {{ trans('web::seat.yes') }}
-                </option>
-                <option value="no"
-                        @if(setting('allow_tracking', true) == "no") selected @endif>
-                  {{ trans('web::seat.no') }}
-                </option>
-              </select>
-              <p class="form-text text-muted mb-0">
-                {{ trans('web::seat.tracking_help') }}
-                <a href="https://eveseat.github.io/docs/admin_guides/understanding_tracking/">Usage Tracking</a>
-              </p>
-            </div>
-          </div>
-
           <!-- Text input-->
           <div class="form-group row">
             <label class="col-md-4 col-form-label" for="tracking_id">{{ trans('web::seat.tracking_id') }}</label>
