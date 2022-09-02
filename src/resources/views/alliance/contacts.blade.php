@@ -15,7 +15,7 @@
     </div>
     <div class="card-body">
 
-      @include('web::common.contacts.buttons.filters')
+      @include('web::alliance.contacts.buttons.filters')
 
       {!! $dataTable->table() !!}
     </div>
