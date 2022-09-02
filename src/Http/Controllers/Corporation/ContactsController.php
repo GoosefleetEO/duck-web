@@ -46,7 +46,7 @@ class ContactsController extends Controller
 
         return $dataTable->addScope(new CorporationScope('corporation.contact', [$corporation->corporation_id]))
             ->addScope(new ContactCategoryScope(request()->input('filters.category')))
-            ->addScope(new ContactStandingLevelScope(request()->input('filters.standing')))
+            /*->addScope(new ContactStandingLevelScope(request()->input('filters.standing')))*/
             ->render('web::corporation.contacts', compact('corporation'));
     }
 }
