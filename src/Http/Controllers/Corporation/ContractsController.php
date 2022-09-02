@@ -47,7 +47,7 @@ class ContractsController extends Controller
 
         return $dataTable->addScope(new CorporationScope('corporation.contract', [$corporation->corporation_id]))
             ->addScope(new ContractTypeScope(request()->input('filters.type')))
-            /*->addScope(new ContractStatusScope(request()->input('filters.status')))*/
+            ->addScope(new ContractStatusScope(request()->input('filters.status')))
             ->render('web::corporation.contracts', compact('corporation'));
     }
 
