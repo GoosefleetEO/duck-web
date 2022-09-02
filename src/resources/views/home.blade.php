@@ -28,15 +28,13 @@
       <div class="info-box">
         <span class="info-box-icon bg-green elevation-1"><i class="fa fa-key"></i></span>
         <div class="info-box-content">
-          <span class="info-box-text">{{ trans('web::seat.linked_characters') }}
+          <span class="info-box-text">{{ trans('web::seat.linked_characters') }}<a href="{{ route('auth.eve') }}" class="text-muted"><small>(Link Additional Character)</small></a>
           </span>
           <span class="info-box-number">
             {{ count(auth()->user()->associatedCharacterIds()) }}
           </span>
           <span class="info-box-text">
-            <a href="{{ route('auth.eve') }}" class="text-muted">
-              <small>Link Additional Character</small>
-            </a>
+
           </span>
         </div><!-- /.info-box-content -->
       </div><!-- /.info-box -->
