@@ -7,9 +7,7 @@
         </h3>
     </div>
     <div class="card-body">
-        <p>
-            @lang('web::about.security_pane_content', ['contact_email' => '<a href="mailto:theninjabag@gmail.com">theninjabag@gmail.com</a>'])
-        </p>
+
     </div>
 
 </div>
