@@ -73,21 +73,6 @@
 
     <div class="col-md-4 col-sm-6">
 
-      <!-- Ore Badge -->
-      <div class="info-box">
-        <span class="info-box-icon bg-yellow elevation-1"><i class="fas fa-coins"></i></span>
-        <div class="info-box-content">
-          <span class="info-box-text">{{ trans('web::seat.total_character_ratted_isk') }} <small class="text-muted">({{ trans('web::seat.current_month') }})</small></span>
-          <span class="info-box-number">
-            {{ number_format($total_character_ratting) }}
-          </span>
-        </div><!-- /.info-box-content -->
-      </div><!-- /.info-box -->
-
-    </div>
-    
-    <div class="col-md-4 col-sm-6">
-
       <!-- Skills Badge -->
       <div class="info-box">
         <span class="info-box-icon bg-black elevation-1"><i class="fa fa-graduation-cap"></i></span>
